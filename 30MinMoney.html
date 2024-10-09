@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Minute Money Solutions Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>30-Minute Money Solutions Toolkit</h1>
+        <p>Get personalized financial insights in minutes.</p>
+    </header>
+
+    <section id="toolkit">
+
+        <!-- Budget Planner -->
+        <div class="tool" id="budgetPlanner">
+            <h2>Budget Planner</h2>
+            <form id="budgetForm">
+                <label for="income">Monthly Income ($):</label>
+                <input type="number" id="income" required>
+
+                <label for="expenses">Monthly Expenses ($):</label>
+                <input type="number" id="expenses" required>
+
+                <button type="button" onclick="calculateBudget()">Calculate Budget</button>
+            </form>
+            <div id="budgetResult"></div>
+        </div>
+
+        <!-- Emergency Fund Calculator -->
+        <div class="tool" id="emergencyFund">
+            <h2>Emergency Fund Calculator</h2>
+            <form id="emergencyForm">
+                <label for="monthlyExpenses">Monthly Expenses ($):</label>
+                <input type="number" id="monthlyExpenses" required>
+
+                <label for="months">Months of Savings Needed:</label>
+                <input type="number" id="months" required>
+
+                <button type="button" onclick="calculateEmergencyFund()">Calculate Emergency Fund</button>
+            </form>
+            <div id="emergencyResult"></div>
+        </div>
+
+        <!-- Retirement Savings Estimator -->
+        <div class="tool" id="retirementSavings">
+            <h2>Retirement Savings Estimator</h2>
+            <form id="retirementForm">
+                <label for="currentSavings">Current Savings ($):</label>
+                <input type="number" id="currentSavings" required>
+
+                <label for="monthlyContribution">Monthly Contribution ($):</label>
+                <input type="number" id="monthlyContribution" required>
+
+                <label for="years">Years Until Retirement:</label>
+                <input type="number" id="years" required>
+
+                <button type="button" onclick="calculateRetirement()">Estimate Retirement Savings</button>
+            </form>
+            <div id="retirementResult"></div>
+        </div>
+
+        <!-- Asset Allocation Modeler -->
+        <div class="tool" id="assetAllocation">
+            <h2>Asset Allocation Modeler</h2>
+            <form id="allocationForm">
+                <label for="age">Your Age:</label>
+                <input type="number" id="age" required>
+
+                <button type="button" onclick="suggestAssetAllocation()">Get Asset Allocation</button>
+            </form>
+            <div id="allocationResult"></div>
+        </div>
+
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
